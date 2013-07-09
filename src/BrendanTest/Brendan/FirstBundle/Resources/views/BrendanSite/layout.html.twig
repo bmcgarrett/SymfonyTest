@@ -6,7 +6,7 @@
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
 
-        {% stylesheets 'bundles/first/css/bootstrap.min.css' filter='cssrewrite' %}
+        {% stylesheets 'bundles/first/css/bootstrap.min.css''bundles/first/css/FirstBundle.css' filter='cssrewrite' %}
         <link rel="stylesheet" type="text/css" href="{{ asset_url }}" />
         {% endstylesheets %}
 
@@ -14,7 +14,7 @@
     <body>
         <div class="navbar">
             <div class="navbar-inner">
-                <a class="brand" href="#">{{ title }}</a>
+                <a class="brand" href="/brendan">Home</a>
                 <ul class="nav">
                     <li><a href='mongo'>MongoDB</a></li>
                     <li><a href='sqlite'>SQLite</a></li>
