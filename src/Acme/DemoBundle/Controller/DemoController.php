@@ -54,4 +54,13 @@ class DemoController extends Controller
 
         return array('form' => $form->createView());
     }
+
+    /**
+     * @Route("/brendan/{fName}/{lName}", name="_demo_brendan")
+     * @Template()
+     */
+    public function brendanAction($fName,$lName)
+    {
+        return array('firstName' => $fName,'lastName' => $lName);
+    }
 }

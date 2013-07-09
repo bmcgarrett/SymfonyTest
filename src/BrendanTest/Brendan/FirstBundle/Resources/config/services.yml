@@ -1,0 +1,7 @@
+parameters:
+#    first.example.class: BrendanTest\Brendan\FirstBundle\Example
+
+services:
+#    first.example:
+#        class: %first.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

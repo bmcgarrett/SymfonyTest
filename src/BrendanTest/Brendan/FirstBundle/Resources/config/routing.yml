@@ -1,0 +1,7 @@
+first_homepage:
+    pattern:  /brendan/hello/{name}
+    defaults: { _controller: FirstBundle:Default:index }
+
+landing_page:
+    pattern: /brendan/landing
+    defaults: { _controller: FirstBundle:BrendanSite:landing }
