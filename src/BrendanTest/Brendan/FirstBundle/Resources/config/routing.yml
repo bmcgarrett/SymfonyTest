@@ -5,3 +5,11 @@ first_homepage:
 landing_page:
     pattern: /brendan/landing
     defaults: { _controller: FirstBundle:BrendanSite:landing }
+
+mongoDB:
+    pattern: /brendan/mongo
+    defaults: { _controller: FirstBundle:BrendanSite:mongo }
+
+SQlite:
+    pattern: /brendan/sqlite
+    defaults: { _controller: FirstBundle:BrendanSite:sqlite }

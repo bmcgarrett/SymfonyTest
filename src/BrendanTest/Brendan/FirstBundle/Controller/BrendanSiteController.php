@@ -8,7 +8,17 @@ class BrendanSiteController extends Controller
 {
     public function landingAction()
     {
-        return $this->render('FirstBundle:BrendanSite:layout.html.twig', array('title' => "Symfony2",
-            'nav' => array('MongoDB' => '/Mongo','SQLite' => '/SQLite')));
+        return $this->render('FirstBundle:BrendanSite:home.html.twig', array('title' => "Symfony2"));
     }
+
+    public function mongoAction()
+    {
+        return $this->render('FirstBundle:BrendanSite:mongo.html.twig', array('title' => "Mongo"));
+    }
+
+    public function sqliteAction()
+    {
+        return $this->render('FirstBundle:BrendanSite:sqlite.html.twig', array('title' => "SQLite"));
+    }
+
 }
