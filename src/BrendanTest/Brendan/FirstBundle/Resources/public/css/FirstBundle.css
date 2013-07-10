@@ -1,3 +1,7 @@
 #contentBlock {
     padding-left: 20px;
 }
+
+#deleteRow {
+    width: 10% !important;
+}

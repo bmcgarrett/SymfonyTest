@@ -13,7 +13,20 @@ class BrendanSiteController extends Controller
 
     public function mongoAction()
     {
-        return $this->render('FirstBundle:BrendanSite:mongo.html.twig', array('title' => "Mongo"));
+        // Configuration
+        $dbhost = 'localhost';
+        $dbname = 'myusert';
+
+        // Connect to test database
+        $m = new \Mongo("mongodb://$dbhost");
+        $db = $m->$dbname;
+
+        // Get the users collection
+        $myUsers = $db->myusers;
+
+        $myUsersList = $myUsers->find();
+
+        return $this->render('FirstBundle:BrendanSite:mongo.html.twig', array('title' => "Mongo",'myUsers' => $myUsersList ));
     }
 
     public function sqliteAction()

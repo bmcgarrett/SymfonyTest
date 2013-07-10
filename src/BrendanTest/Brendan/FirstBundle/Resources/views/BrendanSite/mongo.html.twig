@@ -4,4 +4,24 @@
     <div id="mongoContent">
         <h1>{{ title }}</h1>
     </div>
+    <div id="mongoTable">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Delete</th>
+                <th>User ID</th>
+                <th>Username</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for key,user in myUsers %}
+                    <tr>
+                        <td id="deleteRow"><i class="icon-remove icon-white"></i></td>
+                        <td>{{ user._id }}</td>
+                        <td>{{ user.username }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 {% endblock %}
